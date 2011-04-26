@@ -130,7 +130,7 @@ src                  Java source code (and associated resource files)
 	<property name="app.path"      value="/${app.name}"/>
 	<property name="app.version"   value="0.1-dev"/>
 	<property name="build.home"    value="${basedir}/build"/>
-	<property name="catalina.home" value="D:\\Tomcat 5.5"/> <!-- UPDATE THIS! -->
+	<property name="catalina.home" value="D:/Tomcat 5.5"/> <!-- UPDATE THIS! -->
 	<property name="dist.home"     value="${basedir}/dist"/>
 	<property name="docs.home"     value="${basedir}/docs"/>
 	<property name="manager.url"   value="http://localhost:8080/manager"/>
@@ -235,15 +235,15 @@ src                  Java source code (and associated resource files)
 	-->
 
 	<!-- Include all elements that Tomcat exposes to applications -->
-	<pathelement location="${catalina.home}/common/classes"/>
-	<fileset dir="${catalina.home}/common/endorsed">
+	<pathelement location="d:/Tomcat 5.5/common/classes"/>
+	<fileset dir="d:/Tomcat 5.5/common/endorsed">
 	<include name="*.jar"/>
 	</fileset>
-	<fileset dir="${catalina.home}/common/lib">
+	<fileset dir="d:/Tomcat 5.5/common/lib">
 	<include name="*.jar"/>
 	</fileset>
-	<pathelement location="${catalina.home}/shared/classes"/>
-	<fileset dir="${catalina.home}/shared/lib">
+	<pathelement location="d:/Tomcat 5.5/shared/classes"/>
+	<fileset dir="d:/Tomcat 5.5/shared/lib">
 	<include name="*.jar"/>
 	</fileset>
 
