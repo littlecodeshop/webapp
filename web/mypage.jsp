@@ -1,23 +1,18 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Sample Application JSP Page</title>
-	</head>
-	<body bgcolor=white>
-
-		<table border="0">
-			<tr>
-				<td align=center>
-				</td>
-				<td>
-					<h1>Sample Application JSP Page</h1>
-					This is the output of a JSP page that is part of the Hello, World
-					application.
-				</td>
-			</tr>
-		</table>
-
-		<%= new String("Hello!") %>
-
-	</body>
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Hello Dojo!</title>
+    <!-- load Dojo -->
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js"></script>
+    <script>
+        dojo.ready(function(){
+            alert("Dojo version " + dojo.version + " is loaded");
+        });
+    </script>
+</head>
+<body>
+	<h1 id="greeting"><%= new String("Hello!") %></h1>
+</body>
 </html>
 
